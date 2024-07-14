@@ -1,6 +1,5 @@
 import { cn } from '@/lib/utils'
 import { AnimatePresence, motion } from 'framer-motion'
-import Link from 'next/link'
 import { useState } from 'react'
 import { IconType } from 'react-icons'
 
@@ -10,7 +9,7 @@ export const HoverEffect = ({
 }: {
 	items: {
 		title: string
-    icon: IconType
+		icon: IconType
 	}[]
 	className?: string
 }) => {
@@ -18,35 +17,40 @@ export const HoverEffect = ({
 
 	return (
 		<div className={cn('grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10', className)}>
-			{items.map((item, idx) => (
-				<div
-					key={item?.title}
-					className='relative block w-full h-full p-2 group'
-					onMouseEnter={() => setHoveredIndex(idx)}
-					onMouseLeave={() => setHoveredIndex(null)}>
-					<AnimatePresence>
-						{hoveredIndex === idx && (
-							<motion.span
-								className='absolute inset-0 h-full w-full  bg-sky-600/[0.8] block  rounded-3xl'
-								layoutId='hoverBackground'
-								initial={{ opacity: 0 }}
-								animate={{
-									opacity: 1,
-									transition: { duration: 0.15 },
-								}}
-								exit={{
-									opacity: 0,
-									transition: { duration: 0.15, delay: 0.2 },
-								}}
-							/>
-						)}
-					</AnimatePresence>
-					<Card>
-						<CardTitle>{item.title}</CardTitle>
-						<CardDescription>{item.icon}</CardDescription>
-					</Card>
-				</div>
-			))}
+			{items.map((item, idx) => {
+				const Icon = item.icon
+				return (
+					<div
+						key={item?.title}
+						className='relative block w-full h-full p-2 group'
+						onMouseEnter={() => setHoveredIndex(idx)}
+						onMouseLeave={() => setHoveredIndex(null)}>
+						<AnimatePresence>
+							{hoveredIndex === idx && (
+								<motion.span
+									className='absolute inset-0 h-full w-full  bg-sky-600/[0.8] block  rounded-3xl'
+									layoutId='hoverBackground'
+									initial={{ opacity: 0 }}
+									animate={{
+										opacity: 1,
+										transition: { duration: 0.15 },
+									}}
+									exit={{
+										opacity: 0,
+										transition: { duration: 0.15, delay: 0.2 },
+									}}
+								/>
+							)}
+						</AnimatePresence>
+						<Card className='flex flex-col items-center justify-center text-white'>
+							<div className='flex items-center justify-center pb-5'>
+								<Icon size={50} />
+							</div>
+							<p className='text-2xl font-bold'>{item.title}</p>
+						</Card>
+					</div>
+				)
+			})}
 		</div>
 	)
 }
@@ -55,7 +59,7 @@ export const Card = ({ className, children }: { className?: string; children: Re
 	return (
 		<div
 			className={cn(
-				'rounded-2xl h-full w-full p-4 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20',
+				'rounded-2xl h-full w-full py-6 px-10 overflow-hidden bg-black border border-white/[0.2] group-hover:border-slate-700 relative z-20',
 				className
 			)}>
 			<div className='relative z-50'>
@@ -63,10 +67,4 @@ export const Card = ({ className, children }: { className?: string; children: Re
 			</div>
 		</div>
 	)
-}
-export const CardTitle = ({ className, children }: { className?: string; children: React.ReactNode }) => {
-	return <h4 className={cn('text-zinc-100 font-bold tracking-wide mt-4', className)}>{children}</h4>
-}
-export const CardDescription = ({ className, children }: { className?: string; children: React.ReactNode }) => {
-	return <p className={cn('mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm', className)}>{children}</p>
 }

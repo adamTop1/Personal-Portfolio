@@ -1,28 +1,28 @@
-import { SiGit, SiReact, SiNextdotjs, SiMongodb, SiNodedotjs, SiTypescript, SiTailwindcss } from 'react-icons/si'
+import { SiReact, SiNextdotjs, SiMongodb, SiNodedotjs, SiTypescript, SiTailwindcss } from 'react-icons/si'
 
 export const projects = [
 	{
-		title: 'Git',
-		icon: SiGit,
+		title: 'TypeScript',
+		icon: SiTypescript,
 	},
 	{
-		title: 'Git',
-		icon: SiGit,
+		title: 'React',
+		icon: SiReact,
 	},
 	{
-		title: 'Git',
-		icon: SiGit,
+		title: 'Next.js',
+		icon: SiNextdotjs,
 	},
 	{
-		title: 'Git',
-		icon: SiGit,
+		title: 'TailwindCSS',
+		icon: SiTailwindcss,
 	},
 	{
-		title: 'Git',
-		icon: SiGit,
+		title: 'Node.js',
+		icon: SiNodedotjs,
 	},
 	{
-		title: 'Git',
-		icon: SiGit,
+		title: 'MongoDB',
+		icon: SiMongodb,
 	},
 ]
