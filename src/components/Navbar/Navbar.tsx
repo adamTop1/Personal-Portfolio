@@ -1,8 +1,9 @@
 import Link from 'next/link'
 
+
 const Navbar = () => {
 	return (
-		<div className='flex items-center justify-between px-[400px] py-8  shadow-sm shadow-zinc-400 bg-zinc-950'>
+		<div className='flex items-center justify-between px-[400px] py-8 '>
 			<div>
 				<h2 className='font-mono text-3xl font-bold text-white'>Adam</h2>
 			</div>
