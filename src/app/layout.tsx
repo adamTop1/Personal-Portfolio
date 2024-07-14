@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${spaceGrotesk.variable} bg-black text-gray-400 `}>
+      <body className={`${spaceGrotesk.variable} bg-zinc-950 text-zinc-400/80 `}>
         <Navbar />
         {children}
       </body>
