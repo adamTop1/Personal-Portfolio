@@ -1,4 +1,14 @@
-import { SiReact, SiNextdotjs, SiMongodb, SiNodedotjs, SiTypescript, SiTailwindcss } from 'react-icons/si'
+import {
+	SiReact,
+	SiNextdotjs,
+	SiMongodb,
+	SiNodedotjs,
+	SiTypescript,
+	SiTailwindcss,
+	SiGit,
+	SiZod,
+	SiPrisma,
+} from 'react-icons/si'
 
 export const projects = [
 	{
@@ -18,11 +28,23 @@ export const projects = [
 		icon: SiTailwindcss,
 	},
 	{
+		title: 'Git',
+		icon: SiGit,
+	},
+	{
+		title: 'Zod',
+		icon: SiZod,
+	},
+	{
 		title: 'Node.js',
 		icon: SiNodedotjs,
 	},
 	{
 		title: 'MongoDB',
 		icon: SiMongodb,
+	},
+	{
+		title: 'Prisma',
+		icon: SiPrisma,
 	},
 ]
