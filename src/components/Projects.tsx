@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard'
 const Projects = () => {
 	return (
 		<section className='flex flex-col items-center py-20' id='projects'>
-			<h2 className='mb-10 text-6xl font-bold text-slate-200'>PROJECTS</h2>
+			<h2 className='mb-10 text-6xl font-bold text-slate-200 max-sm:text-5xl'>PROJECTS</h2>
 			<ProjectCard
 				title='Simple Todo'
 				technologies={['React', 'Next.js', 'Tailwind CSS']}
