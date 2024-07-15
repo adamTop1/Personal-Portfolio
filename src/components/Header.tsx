@@ -3,7 +3,7 @@ import { FlipWords } from './ui/flip-words'
 
 const Header = () => {
 	return (
-		<div className='flex w-full py-[200px] px-[350px]'>
+		<div className='flex w-full pt-[200px] pb-[150px] px-[350px]'>
 			<div className='flex flex-col items-start font-bold text-white text-8xl '>
 				<h1>Hello, I&apos;m</h1>
 				<div>

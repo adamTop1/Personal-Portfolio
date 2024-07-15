@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={`${spaceGrotesk.variable} bg-zinc-950 text-zinc-400/80 `}>
+			<body style={spaceGrotesk.style} className={`${spaceGrotesk.variable} bg-zinc-950 text-zinc-400/80 --font-spaceGrotesk `}>
 				<Background>
 					<Navbar />
 					{children}
