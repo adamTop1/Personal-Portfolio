@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 const Navbar = () => {
 	return (
-		<div className='flex items-center justify-between px-[400px] py-8 '>
+		<div className='flex items-center justify-between px-[350px] py-8 '>
 			<div>
-				<h2 className='font-mono text-3xl font-bold text-white'>Adam</h2>
+				<h2 className='font-mono text-3xl font-bold text-white'>Adam <span className='text-sky-600'>Wasylak</span></h2>
 			</div>
 			<div className='flex gap-10 font-medium text-md '>
 				<Link

@@ -20,8 +20,6 @@ export const FlipWords = ({
 		const word = words[words.indexOf(currentWord) + 1] || words[0]
 		setCurrentWord(word)
 		setIsAnimating(true)
-        console.log(word);
-        console.log(words);
 	}, [currentWord, words])
 
 	useEffect(() => {
