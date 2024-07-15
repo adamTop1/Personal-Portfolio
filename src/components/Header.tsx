@@ -3,13 +3,16 @@ import { FlipWords } from './ui/flip-words'
 
 const Header = () => {
 	return (
-		<div className='flex w-full pt-[200px] pb-[150px] px-[350px]'>
-			<div className='flex flex-col items-start font-bold text-white text-8xl '>
+		<div className='flex w-full pt-[120px] md:pt-[200px] pb-[150px]  px-[50px] md:px-[150px] xl:px-[300px]'>
+			<div className='flex flex-col items-stretch text-4xl font-bold text-white sm:items-start md:text-6xl xl:text-7xl '>
 				<h1>Hello, I&apos;m</h1>
-				<div>
-					<FlipWords words={[`Adam  Wasylak`, 'a frontend developer']} duration={5000} className='text-sky-600' />
+				<div className='max-md:visible md:hidden'>
+					<span className='text-sky-600'>Adam Wasylak</span>
 				</div>
-				<p className='mt-14 text-base max-w-[500px] text-gray-500'>
+				<div className='md:visible max-md:hidden'>
+					<FlipWords words={[`Adam  Wasylak`, 'a frontend developer']} duration={5000} className='text-sky-600'  />
+				</div>
+				<p className='mt-14 text-sm md:text-base max-w-[500px] text-gray-500'>
 					I‘m a 18-year-old programmer aspiring to become a full-stack developer. I‘m passionate about programming,
 					teamwork, and creating innovative solutions with attractive user interfaces, eager to tackle new challenges
 					and collaborate with fellow technology enthusiasts.
