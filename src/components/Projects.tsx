@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard'
 
 const Projects = () => {
 	return (
-		<div className='flex flex-col items-center py-20'>
+		<section className='flex flex-col items-center py-20' id='projects'>
 			<h2 className='mb-10 text-6xl font-bold text-slate-200'>PROJECTS</h2>
 			<ProjectCard
 				title='Simple Todo'
@@ -32,7 +32,7 @@ const Projects = () => {
 				codeLink='https://github.com/adamTop1/simple-todo'
 				liveLink='https://todo-app-adamtop1-716676.netlify.app/'
 			/>
-		</div>
+		</section>
 	)
 }
 

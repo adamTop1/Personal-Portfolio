@@ -46,7 +46,7 @@ export const HoverEffect = ({
 							<div className='flex items-center justify-center pb-5'>
 								<Icon size={40} />
 							</div>
-							<p className='text-2xl font-bold'>{item.title}</p>
+							<p className='text-2xl font-bold text-white/50'>{item.title}</p>
 						</Card>
 					</div>
 				)
