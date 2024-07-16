@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Header = () => {
 	return (
 		<div className='flex  w-full pt-[120px] md:pt-[200px] pb-[150px]  px-[50px] md:px-[150px] 2xl:px-[300px]'>
-			<div className='flex flex-col items-stretch w-8/12 text-4xl font-bold text-white sm:items-start md:text-6xl xl:text-7xl '>
+			<div className='flex flex-col items-stretch text-4xl font-bold text-white xl:w-8/12 sm:items-start md:text-6xl xl:text-7xl '>
 				<h1>Hello, I&apos;m</h1>
 				<div className='max-md:visible md:hidden'>
 					<span className='text-sky-600'>Adam Wasylak</span>
