@@ -11,7 +11,7 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-	title: 'Portfolio',
+	title: 'Adam Wasylak',
 	description: 'My personal portfolio website built with Next.js',
 }
 
