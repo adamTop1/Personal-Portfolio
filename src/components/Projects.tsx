@@ -6,27 +6,16 @@ const Projects = () => {
 		<section className='flex flex-col items-center py-20' id='projects'>
 			<h2 className='mb-10 text-6xl font-bold text-slate-200 max-sm:text-5xl'>PROJECTS</h2>
 			<ProjectCard
-				title='Simple Todo'
-				technologies={['React', 'Next.js', 'Tailwind CSS']}
-				description='Developed a comprehensive Next.js application designed for end-to-end issue tracking and assignment Empowered
-					users to break down complex problems into manageable chunks, facilitating efficient tracking and resolution
-					within the app.'
-				codeLink='https://github.com/adamTop1/simple-todo'
-				liveLink='https://todo-app-adamtop1-716676.netlify.app/'
+				title='CleanNotes'
+				technologies={[ 'Next.js', 'Prisma' , 'Tailwind CSS']}
+				description='Developed CleanNotes, an application for creating notes, built using all the knowledge I had acquired previously. This project not only pushed my skills but also taught me to refining my problem-solving techniques.'
+				codeLink='https://github.com/adamTop1/CleanNotes'
+				liveLink='https://clean-notes-seven.vercel.app/'
 			/>
 			<ProjectCard
 				title='Simple Todo'
-				technologies={['React', 'Next.js', 'Tailwind CSS']}
-				description='Developed a comprehensive Next.js application designed for end-to-end issue tracking and assignment Empowered
-					users to break down complex problems into manageable chunks, facilitating efficient tracking and resolution
-					within the app.'
-				codeLink='https://github.com/adamTop1/simple-todo'
-				liveLink='https://todo-app-adamtop1-716676.netlify.app/'
-			/>
-			<ProjectCard
-				title='Simple Todo'
-				technologies={['React', 'Next.js', 'Tailwind CSS']}
-				description='Developed a comprehensive Next.js application designed for end-to-end issue tracking and assignment Empowered
+				technologies={['React', 'Tailwind CSS', 'UseContext']}
+				description='Developed a comprehensive React application designed for end-to-end issue tracking and assignment Empowered
 					users to break down complex problems into manageable chunks, facilitating efficient tracking and resolution
 					within the app.'
 				codeLink='https://github.com/adamTop1/simple-todo'
