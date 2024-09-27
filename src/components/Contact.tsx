@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiDiscord, SiGithub, SiMaildotru } from 'react-icons/si'
+import { SiDiscord, SiGithub, SiMaildotru, SiInstagram, SiFacebook  } from 'react-icons/si'
 
 const Contact = () => {
 	return (
@@ -15,6 +15,14 @@ const Contact = () => {
 				<a href='https://discord.com/users/719983323853750283' target='_blank' className='relative flex gap-3 duration-300 hover:scale-105'>
                 <p className='text-xl border-b sm:hidden border-sky-600'>Discord: </p>
                     <SiDiscord />
+				</a>
+				<a href='https://www.instagram.com/adam9966_/' target='_blank' className='relative flex gap-3 duration-300 hover:scale-105'>
+                <p className='text-xl border-b sm:hidden border-sky-600'>Instagram: </p>
+                    <SiInstagram />
+				</a>
+				<a href='https://www.facebook.com/Prezesoooooo/' target='_blank' className='relative flex gap-3 duration-300 hover:scale-105'>
+                    <p className='text-xl border-b sm:hidden border-sky-600'>Facebook: </p>
+					<SiFacebook />
 				</a>
 				<a href='https://github.com/adamTop1' target='_blank' className='relative flex gap-3 duration-300 hover:scale-105'>
                     <p className='text-xl border-b sm:hidden border-sky-600'>Github: </p>

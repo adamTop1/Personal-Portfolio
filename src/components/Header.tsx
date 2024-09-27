@@ -14,9 +14,7 @@ const Header = () => {
 					<FlipWords words={[`Adam  Wasylak`, 'a frontend developer']} duration={5000} className='text-sky-600' />
 				</div>
 				<p className='mt-14 text-sm md:text-base max-w-[500px] text-gray-500'>
-					I‘m a 18-year-old programmer aspiring to become a full-stack developer. I‘m passionate about programming,
-					teamwork, and creating innovative solutions with attractive user interfaces, eager to tackle new challenges
-					and collaborate with fellow technology enthusiasts.
+				I am an 18-year-old programmer with a goal of becoming a full-stack developer. I love coding and working with others to create innovative projects that not only work well but look great too. I am always excited to take on new challenges and collaborate with other tech enthusiasts to bring creative ideas to life.
 				</p>
 				<button className='shadow-[0_4px_14px_0_rgb(0,118,255,39%)] hover:shadow-[0_6px_20px_rgba(0,118,255,23%)] hover:bg-[rgba(0,118,255,0.9)] px-8 py-2 mt-16 bg-[#0070f3] rounded-md text-white text-base font-light transition duration-200 ease-linear'>
 					<a href='mailto:adamwasylak1@gmail.com'>Contact me</a>
