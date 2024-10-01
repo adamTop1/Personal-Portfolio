@@ -16,7 +16,7 @@ const Contact = () => {
                 <p className='text-xl border-b sm:hidden border-sky-600'>Discord: </p>
                     <SiDiscord />
 				</a>
-				<a href='https://www.instagram.com/adam9966_/' target='_blank' className='relative flex gap-3 duration-300 hover:scale-105'>
+				<a href='https://www.instagram.com/adam.wasylak/' target='_blank' className='relative flex gap-3 duration-300 hover:scale-105'>
                 <p className='text-xl border-b sm:hidden border-sky-600'>Instagram: </p>
                     <SiInstagram />
 				</a>
