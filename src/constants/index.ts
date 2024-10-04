@@ -1,7 +1,7 @@
 import {
 	SiReact,
 	SiNextdotjs,
-	SiMongodb,
+	SiPostgresql,
 	SiNodedotjs,
 	SiTypescript,
 	SiTailwindcss,
@@ -40,8 +40,8 @@ export const projects = [
 		icon: SiNodedotjs,
 	},
 	{
-		title: 'MongoDB',
-		icon: SiMongodb,
+		title: 'Postgresql',
+		icon: SiPostgresql,
 	},
 	{
 		title: 'Prisma',
