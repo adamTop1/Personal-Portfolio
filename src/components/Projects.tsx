@@ -10,16 +10,7 @@ const Projects = () => {
 				technologies={[ 'Next.js', 'Prisma' , 'Tailwind CSS']}
 				description='Developed CleanNotes, an application for creating notes, built using all the knowledge I had acquired previously. This project not only pushed my skills but also taught me to refining my problem-solving techniques.'
 				codeLink='https://github.com/adamTop1/CleanNotes'
-				liveLink='https://clean-notes-seven.vercel.app/'
-			/>
-			<ProjectCard
-				title='Simple Todo'
-				technologies={['React', 'Tailwind CSS', 'UseContext']}
-				description='Developed a comprehensive React application designed for end-to-end issue tracking and assignment Empowered
-					users to break down complex problems into manageable chunks, facilitating efficient tracking and resolution
-					within the app.'
-				codeLink='https://github.com/adamTop1/simple-todo'
-				liveLink='https://todo-app-adamtop1-716676.netlify.app/'
+				liveLink='clean-notes-liard.vercel.app/'
 			/>
 		</section>
 	)
