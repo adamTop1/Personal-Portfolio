@@ -18,7 +18,7 @@ const ProjectCard = ({ title, technologies, description, codeLink, liveLink, img
 	return (
 		<div
 			className=' duration-500 hover:translate-x-2 grid max-sm:grid-rows-1 max-md:grid-rows-2 md:grid-cols-2  rounded-2xl  overflow-hidden bg-black border hover:border-sky-600/50 border-white/[0.2] group-hover:border-slate-700
-         my-5 mx-4'>
+         my-5 mx-4 max-sm:w-11/12'>
 			<Image src={image} width={500} height={120} alt='project photo' className='p-2 rounded-3xl max-sm:hidden' />
 			<div className='flex flex-col items-start p-4 justify-evenly max-sm:gap-5'>
 				<h3 className='text-xl font-bold text-white'>{title}</h3>
